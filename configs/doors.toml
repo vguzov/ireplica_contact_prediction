@@ -1,0 +1,28 @@
+expname = "hinged"
+dataloader_threads = 5
+include_hands = true
+body_dim = 69
+hand_dim = 45
+max_epochs = 50
+batch_size = 50
+outdir = "checkpoints"
+
+
+[arch]
+window_radius = 30
+out_dim = 2
+multiheadatt_heads_count = 8
+linear_dim = 32
+internal_dim = 32
+transformer_layers_count = 3
+arch_name = "transformer"
+
+[dataset]
+sequences = ['SUB10_TUB_2OG_door02opening.00', 'SUB7_TUB_2OG_dooropening.01', 'SUB7_TUB_2OG_dooropening.02', 'SUB7_TUB_2OG_dooropening.03', 'SUB8_TUB_2OG_door00opening.00', 'SUB9_TUB_2OG_door01opening.00', 'SUB5_TUB_0KIT_door_int2.00', 'SUB5_TUB_2OG_door.00']
+no_train_sequences = ['SUB5_TUB_0KIT_door_int2.00', 'SUB5_TUB_2OG_door.00']
+no_valid_sequences = ['SUB5_TUB_0KIT_door_int2.00', 'SUB5_TUB_2OG_door.00']
+no_test_sequences = ['SUB10_TUB_2OG_door02opening.00', 'SUB7_TUB_2OG_dooropening.01', 'SUB7_TUB_2OG_dooropening.02', 'SUB7_TUB_2OG_dooropening.03', 'SUB8_TUB_2OG_door00opening.00', 'SUB9_TUB_2OG_door01opening.00']
+poses_dir = "data/body"
+contacts_dir = "data/contacts"
+splits_dir = "data/splits/doors"
+include_mirrored_poses = true

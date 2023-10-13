@@ -1,0 +1,28 @@
+expname = "hinged" # Your experiment name
+dataloader_threads = 10 # Number of workers for data loading
+include_hands = true # Include fingers positions in the input
+body_dim = 69 # Number of body joints
+hand_dim = 45 # Number of hand joints (per hand)
+max_epochs = 200 # Number of epochs to train
+batch_size = 100 # Batch size
+outdir = "checkpoints" # Directory to save checkpoints
+
+
+[arch]
+window_radius = 30 # Radius of the window around the current frame, i.e. the number of frames to consider before and after the current frame
+out_dim = 2 # Number of output dimensions (2 to predict probability of contact for two hands)
+multiheadatt_heads_count = 8 # Number of heads in the multi-head attention layer
+linear_dim = 32 # Dimension of the linear projection layer
+internal_dim = 32 # Lateral dimension of the transformer layers
+transformer_layers_count = 3 # Number of transformer layers
+arch_name = "transformer" # Architecture name
+
+[dataset]
+sequences = ["SUB5_TUB_2OG_door.00", "SUB5_TUB_0KIT_door_int2.00"] # List of sequences from the dataset to use (train, test, and validation)
+no_train_sequences = ["SUB5_TUB_0KIT_door_int2.00"] # List of sequences defined in "sequences" to exclude from the training set
+no_valid_sequences = [] # List of sequences "sequences" to exclude from the validation set
+no_test_sequences = ["SUB5_TUB_2OG_door.00"] # List of sequences "sequences" to exclude from the test set
+poses_dir = "./data/body" # Input directory with the poses
+contacts_dir = "./data/contacts" # Input directory with the contacts
+splits_dir = "./data/splits/split_name" # Input directory with train/valid/test splits
+include_mirrored_poses = true # Include mirrored poses in the input (augmentation)

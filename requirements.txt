@@ -1,0 +1,11 @@
+numpy>=1.20
+toml
+dacite
+loguru
+zipjson
+pytorch_lightning
+torch
+torchvision
+tqdm
+scipy
+tensorboard
