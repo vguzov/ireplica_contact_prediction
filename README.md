@@ -121,9 +121,11 @@ The **H-Contact** dataset used to train this network for iReplica method is avai
 If you use this code, please cite our paper:
 
 ```
-@inproceedings{guzov23ireplica,
+@inproceedings{guzov24ireplica,
     title = {Interaction Replica: Tracking human–object interaction and scene changes from human motion},
     author = {Guzov, Vladimir and Chibane, Julian and Marin, Riccardo and He, Yannan and Saracoglu, Yunus and Sattler, Torsten and Pons-Moll, Gerard},
-    booktitle = {arXiv},
-    year = {2023}}
+    booktitle = {International Conference on 3D Vision (3DV)},
+    month = {March},
+    year = {2024},
+}
 ```
