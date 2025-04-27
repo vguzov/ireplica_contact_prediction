@@ -15,10 +15,10 @@ This repository is part of the iReplica project, for more information and other 
 
 The model trained on the H-Contact dataset are available here
 
-| Model pretrain type         | Link                                                                      | Config                     | Train/val/test split (unpack it) |
-|-----------------------------|---------------------------------------------------------------------------|----------------------------|----------------------------------|
-| Doors (for hinged objects)  | [Download](https://nextcloud.mpi-klsb.mpg.de/index.php/s/KYqA7mCfZndoFaC) | [Link](configs/doors.toml) | [Link](splits/doors.tar.gz)      |
-| Sofas (for sliding objects) | [Download](https://nextcloud.mpi-klsb.mpg.de/index.php/s/T3giJm9skcpnKyx) | [Link](configs/sofas.toml) | [Link](splits/sofas.tar.gz)      |
+| Model pretrain type         | Link                                           | Config                     | Train/val/test split (unpack it) |
+|-----------------------------|------------------------------------------------|----------------------------|----------------------------------|
+| Doors (for hinged objects)  | [Link](checkpoints/with_hands_hinged_fd.ckpt)  | [Link](configs/doors.toml) | [Link](splits/doors.tar.gz)      |
+| Sofas (for sliding objects) | [Link](checkpoints/with_hands_sliding_fd.ckpt) | [Link](configs/sofas.toml) | [Link](splits/sofas.tar.gz)      |
 
 ## Inference
 
